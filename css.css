@@ -1,4 +1,26 @@
 body {
-    background-image: url("https://qph.ec.quoracdn.net/main-qimg-c525856e9fa44637eb07b1dfd2a8dd7f");
-    background-repeat: repeat-y;
+  overflow: scroll;
+  background-image: url("https://qph.ec.quoracdn.net/main-qimg-c525856e9fa44637eb07b1dfd2a8dd7f");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#source {
+  color: #00ff26;
+}
+
+#sources {
+  color: #00ff26;
+  text-decoration: none;
+}
+
+#sources:hover {
+  color: #00a5ff;
+  text-decoration: none;
+}
+
+.txtpink {
+  color: #ff00c7;
 }
