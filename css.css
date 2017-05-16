@@ -1,30 +1,66 @@
-body {
-  overflow: scroll;
-  background-image: url("https://qph.ec.quoracdn.net/main-qimg-c525856e9fa44637eb07b1dfd2a8dd7f");
-  background-repeat: no-repeat;
-  background-position: right top;
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.65;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://qph.ec.quoracdn.net/main-qimg-c525856e9fa44637eb07b1dfd2a8dd7f");
+  min-height: 100%;
 }
 
-#source {
-  color: #ff00c7; /*pink*/
+.bgimg-2 {
+  background-image: url("http://media-cdn.tripadvisor.com/media/photo-s/02/8c/fb/30/filename-7-jpg-thumbnail0.jpg");
+  min-height: 400px;
 }
 
-#sources {
-  color: #ff00c7; /*pink*/
-  text-decoration: none;
+.bgimg-3 {
+  background-image: url("http://cdn.lolwot.com/wp-content/uploads/2016/01/10-facts-you-never-knew-about-the-holocaust-5.jpg");
+  min-height: 400px;
 }
 
-#sources:hover {
-  color: #00a5ff; /*blue*/
-  text-decoration: none;
+.bgimg-4 {
+  background-image: url("https://flashtrafficblog.files.wordpress.com/2014/04/holocaust-photo.jpg");
+  min-height: 400px;
 }
 
-.txtgreen {
-  color: #00ff26 /*green*/
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
 }
 
-.titles {
-  font-size: 100px;
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
