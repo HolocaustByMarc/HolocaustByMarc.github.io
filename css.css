@@ -8,19 +8,23 @@ body {
 }
 
 #source {
-  color: #00ff26;
+  color: #ff00c7; /*pink*/
 }
 
 #sources {
-  color: #00ff26;
+  color: #ff00c7; /*pink*/
   text-decoration: none;
 }
 
 #sources:hover {
-  color: #00a5ff;
+  color: #00a5ff; /*blue*/
   text-decoration: none;
 }
 
-.txtpink {
-  color: #ff00c7;
+.txtgreen {
+  color: #00ff26 /*green*/
+}
+
+.titles {
+  font-size: 100px;
 }
