@@ -21,27 +21,27 @@ body, html {
 
 .bgimg-2 {
   background-image: url("http://media-cdn.tripadvisor.com/media/photo-s/02/8c/fb/30/filename-7-jpg-thumbnail0.jpg");
-  min-height: 400px;
+  min-height: 50%;
 }
 
 .bgimg-3 {
   background-image: url("http://cdn.lolwot.com/wp-content/uploads/2016/01/10-facts-you-never-knew-about-the-holocaust-5.jpg");
-  min-height: 400px;
+  min-height: 60%;
 }
 
 .bgimg-4 {
   background-image: url("https://flashtrafficblog.files.wordpress.com/2014/04/holocaust-photo.jpg");
-  min-height: 400px;
+  min-height: 50%;
 }
 
 .bgimg-5 {
   background-image: url("https://s-media-cache-ak0.pinimg.com/736x/a6/3e/55/a63e55cefb431391f4ca15b4a2c8e2b0.jpg");
-  min-height: 400px;
+  min-height: 50%;
 }
 
 .bgimg-6 {
   background-image: url("http://www.pts.edu/UserFiles/Image/Library/Niemoeller.jpg");
-  min-height: 400px;
+  min-height: 60%;
 }
 
 .caption {
@@ -75,11 +75,36 @@ h3 {
     }
 }
 
-#sources {
+.sources {
   color: inherit;
   text-decoration: none;
 }
-#sources:hover {
+.sources:hover {
   color: #ff0000;
   text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+table {
+    width:100%;
+}
+table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th {
+    font-weight: bold;
 }
